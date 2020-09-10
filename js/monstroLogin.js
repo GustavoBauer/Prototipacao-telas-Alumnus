@@ -23,52 +23,32 @@ document.onmousemove = function (mouse) {
   }
 };
 
-//Melhorar este codigo do oninput
+function eyeTracking(field) {
+  num = field.value.length;
+  switch (true) {
+    case num >= 1 && num < 8:
+      monster.src = "../img/monstro-login/read/1.png";
+      break;
+    case num >= 8 && num < 24:
+      monster.src = "../img/monstro-login/read/2.png";
+      break;
+    case num >= 24:
+      monster.src = "../img/monstro-login/read/3.png";
+      break;
+  }
+}
 
 loginEmail.oninput = function () {
-  num = loginEmail.value.length;
-  switch (true) {
-    case num >= 1 && num < 8:
-      monster.src = "../img/monstro-login/read/1.png";
-      break;
-    case num >= 8 && num < 24:
-      monster.src = "../img/monstro-login/read/2.png";
-      break;
-    case num >= 24:
-      monster.src = "../img/monstro-login/read/3.png";
-      break;
-  }
-};
+  eyeTracking(loginEmail);
+}
 
 signupEmail.oninput = function () {
-  num = signupEmail.value.length;
-  switch (true) {
-    case num >= 1 && num < 8:
-      monster.src = "../img/monstro-login/read/1.png";
-      break;
-    case num >= 8 && num < 24:
-      monster.src = "../img/monstro-login/read/2.png";
-      break;
-    case num >= 24:
-      monster.src = "../img/monstro-login/read/3.png";
-      break;
-  }
-};
+  eyeTracking(signupEmail);
+}
 
 nickname.oninput = function () {
-  num = nickname.value.length;
-  switch (true) {
-    case num >= 1 && num < 8:
-      monster.src = "../img/monstro-login/read/1.png";
-      break;
-    case num >= 8 && num < 24:
-      monster.src = "../img/monstro-login/read/2.png";
-      break;
-    case num >= 24:
-      monster.src = "../img/monstro-login/read/3.png";
-      break;
-  }
-};
+  eyeTracking(nickname);
+}
 
 function cover() {
   follow = false;

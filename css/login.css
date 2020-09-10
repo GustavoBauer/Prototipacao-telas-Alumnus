@@ -1,5 +1,6 @@
 /* Container Formulário */
 body {
+  background: var(--cor-primaria-2);
   overflow: hidden;
 }
 
@@ -228,10 +229,10 @@ form .btn .btn-layer {
   left: -100%;
   background: -webkit-linear-gradient(
     right,
-    var(--color-secundaria-2),
-    var(--color-secundaria-1),
-    var(--color-secundaria-2),
-    var(--color-secundaria-1)
+    var(--cor-secundaria-2),
+    var(--cor-secundaria-1),
+    var(--cor-secundaria-2),
+    var(--cor-secundaria-1)
   );
   border-radius: 5px;
   transition: all 0.4s ease;
