@@ -1,20 +1,3 @@
-::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--cor-primaria-2);
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--cor-primaria-4);
-}
-
-::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:active {
-  background-color: var(--cor-primaria-5);
-}
 /* Customização do fullpage.js */
 .fullpage-wrapper {
   transition: all 1s ease 0s !important;
@@ -34,9 +17,21 @@
 #fullpage {
   background-color: #fff;
 }
+
+@media (max-width: 678px) {
+  body.fp-viewing-5-0 .fp-slidesNav.bottom,
+  body.fp-viewing-5-1 .fp-slidesNav.bottom,
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span,
+  #fp-nav ul li .fp-tooltip {
+    display: none;
+    pointer-events: none;
+  }
+}
 .section {
   min-height: 100vh;
   background-color: #f8f9fa;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -89,14 +84,6 @@
   .middle-buttons {
     display: none;
   }
-  body.fp-viewing-5-0 .fp-slidesNav.bottom,
-  body.fp-viewing-5-1 .fp-slidesNav.bottom,
-  #fp-nav ul li a span,
-  .fp-slidesNav ul li a span,
-  #fp-nav ul li .fp-tooltip {
-    display: none;
-    pointer-events: none;
-  }
 }
 
 /* Landing Page */
@@ -109,7 +96,7 @@
 
 .s1 .container {
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 500ms;
 }
 
 @keyframes fade {
@@ -236,19 +223,10 @@ button:after {
 .s3 {
   background: linear-gradient(
     180deg,
-    var(--cor-primaria-3),
+    var(--cor-primaria-1),
     var(--cor-primaria-5)
   );
-  /* background-size: 400% 400%;
-  animation: bg 30s ease infinite;
-  height: 100%; */
 }
-
-/* @keyframes bg {
-  0%{background-position:50% 0%}
-  50%{background-position:50% 100%}
-  100%{background-position:50% 0%}
-} */
 
 .s3 .wave {
   position: absolute;
@@ -322,3 +300,97 @@ button:after {
     background-position-x: 1000px;
   }
 }
+
+#container-arredondado{
+  border-radius: 25px;
+}
+
+.testimonial-section{
+  background: #ffffff;
+  padding: 5% 0px;
+  text-align: center;
+  border-radius: 25px;
+  border: 5px solid var(--cor-bg);
+}
+.testimonial-pics{
+  padding: 5% 0;
+}
+
+.testimonial-pics img{
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  margin: 0 2%;
+  filter: grayscale(100%);
+  border: 1px solid var(--cor-bg);
+  transition: .3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.testimonial-pics img:hover, .testimonial-pics img.active{
+  filter: none;
+}
+
+.testimonial{
+  display: none;
+}
+
+.testimonial.active{
+  display: block;
+}
+
+@media (max-width: 499px) {
+  .testimonial-pics img{
+    width: 75px;
+    height: 75px;
+  }
+}
+
+#img-feedback img{
+  max-width: 85%;
+}
+
+/* Contato */
+
+.s4{
+  background-image: url("../img/wave2.svg");
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100%;
+}
+
+.s4 form{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border: 5px solid var(--cor-bg);
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--cor-primaria-2),
+    var(--cor-primaria-4)
+  );
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+
+}
+
+.social-icons a{
+  font-size: 1.5em;
+  color: rgba(255,255,255,0.7);
+  margin-right: 3%;
+}
+
+.social-icons a:last-child{
+  margin-right: 0;
+}
+.social-icons a:hover{
+  color: rgba(255,255,255);
+}
+
+

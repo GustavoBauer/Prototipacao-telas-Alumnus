@@ -155,7 +155,6 @@ input[type="radio"] {
   border: none;
   font-size: 14px;
   border-bottom: 2px solid silver;
-  font-family: "Questrial", sans-serif;
 }
 
 .input-data input:focus ~ label,

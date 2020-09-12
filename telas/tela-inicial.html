@@ -31,7 +31,8 @@
             <a class="navbar-brand text-uppercase font-weight-bold" href="tela-inicial.html">Alumnus</a>
             <div class="btn-group middle-buttons" role="group">
                 <a href="tela-inicial.html" class="btn text-white nav-link active"><i class="fas fa-home"></i> Home</a>
-                <a href="" class="btn text-white nav-link"><i class="fas fa-user-friends"></i> Ranking</a>
+                <a href="ranking-visitante.html" class="btn text-white nav-link"><i class="fas fa-user-friends"></i>
+                    Ranking</a>
             </div>
             <div class="btn-group" role="group">
                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo"
@@ -47,7 +48,16 @@
                         <a class="nav-link" href="tela-inicial.html#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tela-inicial.html#funcionalidades">Funcionalidades</a>
+                        <a class="nav-link pl-3" href="tela-inicial.html#funcionalidades">Funcionalidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-3" href="tela-inicial.html#feedback">Opinião dos usuários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pl-3" href="tela-inicial.html#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ranking-visitante.html">Ranking</a>
                     </li>
                 </ul>
             </div>
@@ -145,7 +155,7 @@
                         <div class="card-body ">
                             <h5 class="card-title font-weight-bold">Anotações</h5>
                             <p class="card-text">Anote para não esquecer. Mesmo que esqueça, <span
-                                    class="negrito-roxo">revise quando quiser.</span></p>
+                                    class="negrito-roxo">revise na hora que precisar.</span></p>
                         </div>
                         <div class="card-footer d-flex justify-content-center">
                             <a href="login-e-cadastro.html" class="btn text-white btn-success">Conferir <i
@@ -189,7 +199,8 @@
                         </div>
                         <div class="card-footer d-flex justify-content-center">
                             <!-- MUITO CUIDADO QUE O RANKING TEM LINK DIFERENTE-->
-                            <a href="" class="btn text-white btn-success">Conferir <i class="fas fa-eye"></i> </a>
+                            <a href="ranking-visitante.html" class="btn text-white btn-success">Conferir <i
+                                    class="fas fa-eye"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -201,13 +212,99 @@
             <div class="wave wave2"></div>
             <div class="wave wave3"></div>
             <div class="wave wave4"></div>
-            <div class="container">
-                <h3 class="mt-1 p-1 text-white text-center font-weight-bold">Como os usuários descrevem o Alumnus </h3>
-
-
+            <div class="container p-3">
+                <div class="row d-flex justify-content-around align-items-center mt-5">
+                    <div class="col-lg-7 col-md-12 shadow text-left" id="container-arredondado">
+                        <div class="testimonial-section">
+                            <h3 class="text-center p-1 font-weight-bold">Como os usuários descrevem o Alumnus</h3>
+                            <div class="testimonial-contents">
+                                <div class="testimonial-pics">
+                                    <img src="../img/testimonial/p1.jpg" alt="test-1">
+                                    <img src="../img/testimonial/p2.jpg" alt="test-2" class="active">
+                                    <img src="../img/testimonial/p3.jpg" alt="test-3">
+                                </div>
+                                <div class="testimonial" id="test-1">
+                                    <p class="font-italic py-1 px-3">Melhorei meu foco e minha discplina nos estudos com
+                                        o Alumnus. O melhor de tudo: é grátis.</p>
+                                    <h6 class="mt-2 p-1 text-center text-uppercase negrito-roxo">Pedro Henrique B.
+                                        Santos</h6>
+                                </div>
+                                <div class="testimonial active" id="test-2">
+                                    <p class="font-italic py-1 px-3">Com a ajuda do Alumnus, consegui planejar melhor os
+                                        meus estudos na faculdade e,
+                                        por consequência, comecei a ter menos dor de cabeça e mais tempo livre.</p>
+                                    <h6 class="mt-2 p-1 text-center text-uppercase negrito-roxo">Alexandre Godlewski
+                                    </h6>
+                                </div>
+                                <div class="testimonial" id="test-3">
+                                    <p class="font-italic py-1 px-3">Quando vejo uma pessoa que está com difculdades nos
+                                        estudos, sempre recomendo o Alumnus. Acredito que o esforço inteligente é a
+                                        chave para superar qualquer obstáculo.</p>
+                                    <h6 class="mt-2 p-1 text-center text-uppercase negrito-roxo">Dr. Miguel Freixo</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-none d-md-none d-lg-block col-lg-5 center-image text-right"
+                        id="img-feedback">
+                        <img src="../img/speaker.svg" alt="feedback">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="section fp-auto-height s4">Auto height</div>
+        <div class="section fp-auto-height s4">
+            <div class="container p-3 my-5">
+                <div class="row d-flex justify-content-around align-items-center mt-5">
+                    <div class="col-lg-5 col-md-12 px-5">
+                        <h3 class="p-1 text-center text-white font-weight-bold">Contate a gente!</h3>
+                        <h6 class="p-1 mb-1 text-white text-center">Você receberá um e-mail com a resposta.</h6>
+                        <div class="mt-5 center-image d-none d-sm-none d-md-none d-lg-block">
+                            <img src="../img/email.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 shadow">
+                        <form class="p-3 my-2">
+                            <h3 class="text-center font-weight-bold py-3">Contato</h3>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail"
+                                        placeholder="email@email.com">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputNome">Nome</label>
+                                    <input type="text" class="form-control" id="inputNome"
+                                        placeholder="Insira seu nome">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputNome">Assunto</label>
+                                <input type="text" class="form-control" id="inputNome"
+                                    placeholder="Insira o assunto da mensagem">
+                            </div>
+                            <div class="form-group">
+                                <label for="textarea-recado" class="textarea-recado">Escreva seu recado</label>
+                                <textarea class="form-control" id="textarea-recado" rows="3"></textarea>
+                            </div>
+                            <div class="btn-landing-page">
+                                <button class="btn-verde">Enviar <i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer p-2">
+                <div class="container">
+                    <div class="social-icons text-center">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
     </div>
 
     <!-- Bootstrap: Optional JavaScript -> jQuery first, then Popper.js, then Bootstrap JS -->
@@ -228,8 +325,8 @@
         var fullpage = new fullpage("#fullpage", {
             autoScrolling: false,
             navigation: true,
-            navigationTooltips: ["Home", "Funcionalidades", "Feedback"],
-            anchors: ['home', 'funcionalidades', "feedback"],
+            navigationTooltips: ["Home", "Funcionalidades", "Opinião dos usuários", "Contato"],
+            anchors: ['home', 'funcionalidades', "feedback", "contato"],
             showActiveTooltip: false,
             navigationPosition: "right",
             scrollBar: true,
@@ -263,6 +360,16 @@
                     items: 3
                 }
             }
+        });
+    </script>
+    <!-- Código JS da testimonial -->
+    <script type="text/javascript">
+        $('.testimonial-pics img').click(function () {
+            $(".testimonial-pics img").removeClass("active");
+            $(this).addClass("active");
+
+            $(".testimonial").removeClass("active");
+            $("#" + $(this).attr("alt")).addClass("active");
         });
     </script>
 </body>
