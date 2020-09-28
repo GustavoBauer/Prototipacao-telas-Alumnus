@@ -112,7 +112,7 @@ body {
 
 .s1 .container {
   animation-name: fade;
-  animation-duration: 500ms;
+  animation-duration: 1500ms;
 }
 
 @keyframes fade {

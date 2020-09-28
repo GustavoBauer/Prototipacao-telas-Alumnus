@@ -41,7 +41,7 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-globe-americas"></i>
                     </a>
-                    <div class="dropdown-menu mt-1 py-3 px-3 shadow" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-menu mt-1 p-3 shadow" aria-labelledby="dropdownMenuLink">
                         <h6 class="pl-1">Idioma:</h6>
                         <div id="google_translate_element"></div>
                     </div>
@@ -294,8 +294,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputNome">Assunto</label>
-                                <input type="text" class="form-control" id="inputNome"
+                                <label for="inputAssunto">Assunto</label>
+                                <input type="text" class="form-control" id="inputAssunto"
                                     placeholder="Insira o assunto da mensagem">
                             </div>
                             <div class="form-group">
@@ -389,7 +389,7 @@
         });
     </script>
     <!-- Código JS da testimonial -->
-    <script type="text/javascript">
+    <script>
         $('.testimonial-pics img').click(function () {
             $(".testimonial-pics img").removeClass("active");
             $(this).addClass("active");
@@ -399,13 +399,12 @@
         });
     </script>
     <!-- Tradução da página-->
-    <script type="text/javascript">
+    <script>
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,pt' }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
