@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -28,24 +28,37 @@
     <!-- navbar-->
     <nav class="navbar fixed-top navbar-dark" id="navbar">
         <div class="container">
-            <a class="navbar-brand text-uppercase font-weight-bold" href="tela-inicial.html">Alumnus</a>
+            <a class="navbar-brand font-weight-bold notranslate" href="tela-inicial.html">ALUMNUS</a>
             <div class="btn-group middle-buttons" role="group">
-                <a href="tela-inicial.html" class="btn text-white nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="tela-inicial.html" class="btn text-white nav-link active notranslate"><i
+                        class="fas fa-home"></i> Home</a>
                 <a href="ranking-visitante.html" class="btn text-white nav-link"><i class="fas fa-user-friends"></i>
                     Ranking</a>
             </div>
             <div class="btn-group" role="group">
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo"
+                <div class="dropdown show ">
+                    <a class="btn text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                    <div class="dropdown-menu mt-1 py-3 px-3 shadow" aria-labelledby="dropdownMenuLink">
+                        <h6 class="pl-1">Idioma:</h6>
+                        <div id="google_translate_element"></div>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo"
                     aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon mr-2"></span>
-                    <a href="login-e-cadastro.html" class="btn text-white btn-success">Entrar <i
-                            class="fas fa-sign-in-alt"></i> </a>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <a href="login-e-cadastro.html" class="btn text-white btn-success">Entrar <i
+                        class="fas fa-sign-in-alt"></i> </a>
+
             </div>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="tela-inicial.html#home">Home</a>
+                        <a class="nav-link notranslate" href="tela-inicial.html#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link pl-3" href="tela-inicial.html#funcionalidades">Funcionalidades</a>
@@ -72,7 +85,7 @@
                         <img src="../img/landingPage.svg" alt="imagem auxiliar">
                     </div>
                     <div class="col-md texto-landing-page">
-                        <h1 class="text-white font-weight-bold m-1 mt-0 p-1 ">Alumnus</h1>
+                        <h1 class="text-white font-weight-bold m-1 mt-0 p-1 notranslate">Alumnus</h1>
                         <h5 class="text-white m-1 p-1">O melhor planejador estudantil</h5>
                         <div class="m-3 mb-0 p-1 btn-group btn-landing-page">
                             <button class="btn-verde" onclick="location.href='login-e-cadastro.html'">Acessar <i
@@ -213,7 +226,8 @@
             <div class="wave wave3"></div>
             <div class="wave wave4"></div>
             <h3 class="mt-5 p-1 pt-5 text-center text-white font-weight-bold">Comunidade</h3>
-            <h6 class="px-4 text-white text-center">O Alumnus possui cerca de <span class="font-weight-bold">1000 usuários</span> cadastrados.</h6> <!-- INFORMAÇÃO DINAMICA-->
+            <h6 class="px-4 text-white text-center">O Alumnus possui cerca de <span class="font-weight-bold">1000
+                    usuários</span> cadastrados.</h6> <!-- INFORMAÇÃO DINAMICA-->
             <div class="container p-3">
                 <div class="row d-flex justify-content-around align-items-end">
                     <div class="col-lg-7 col-md-12 shadow text-left" id="container-arredondado">
@@ -298,11 +312,11 @@
             <footer class="footer p-2">
                 <div class="container">
                     <div class="social-icons text-center">
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="E-mail"><i class="fas fa-envelope"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </footer>
@@ -320,10 +334,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Dropdown menu-->
     <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
+        $('.dropdown-menu').on({
+            "click": function (e) {
+                e.stopPropagation();
+            }
+        });
     </script>
     <!-- Importação Fullpage.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
@@ -333,6 +350,7 @@
         var fullpage = new fullpage("#fullpage", {
             autoScrolling: false,
             navigation: true,
+            fitToSection: false,
             navigationTooltips: ["Home", "Funcionalidades", "Comunidade", "Contato"],
             anchors: ['home', 'funcionalidades', "comunidade", "contato"],
             showActiveTooltip: false,
@@ -380,6 +398,15 @@
             $("#" + $(this).attr("alt")).addClass("active");
         });
     </script>
+    <!-- Tradução da página-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'pt', includedLanguages: 'en,pt' }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 
 </html>
