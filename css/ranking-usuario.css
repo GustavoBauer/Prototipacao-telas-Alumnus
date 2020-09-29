@@ -248,7 +248,9 @@ a:hover {
   content: none;
 }
 
-
+img{
+    max-width: 100%;
+  }
 /* Modal */
 .modal-header{
     background: var(--cor-primaria-3);
