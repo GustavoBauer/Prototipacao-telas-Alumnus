@@ -92,6 +92,10 @@ a:hover{
   transition: all 0.3s linear;
 }
 
+.sidebar_menu{
+  z-index: 1000;
+}
+
 .main_body .sidebar_menu .inner__sidebar_menu {
   position: relative;
   padding-top: 60px;

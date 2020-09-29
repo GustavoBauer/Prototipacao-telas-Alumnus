@@ -93,8 +93,8 @@ a:hover{
 }
 
 .sidebar_menu{
-  z-index: 1000;
-}
+    z-index: 1000;
+  }
 
 .main_body .sidebar_menu .inner__sidebar_menu {
   position: relative;
@@ -244,18 +244,12 @@ a:hover {
   content: none;
 }
 /*Info principal */
-
-table{
-  z-index: 1;
-  position: relative;
-}
-
-img{
-  max-width: 100%;
-}
-
 th{
-  font-weight: bold;
+    font-weight: bold;
+}
+
+td:last-of-type > a:hover {
+    color: var(--cor-primaria-3);
 }
 /* Modal */
 .modal-header{

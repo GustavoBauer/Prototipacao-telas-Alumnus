@@ -89,6 +89,10 @@ img{
   color: var(--cor-primaria-3);
   font-weight: bold;
 }
+
+th{
+  font-weight: bold;
+}
 /* Footer */
 
 footer {

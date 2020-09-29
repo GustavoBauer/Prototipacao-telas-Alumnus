@@ -245,18 +245,6 @@ a:hover {
 }
 /*Info principal */
 
-table{
-  z-index: 1;
-  position: relative;
-}
-
-img{
-  max-width: 100%;
-}
-
-th{
-  font-weight: bold;
-}
 /* Modal */
 .modal-header{
   background: var(--cor-primaria-3);
