@@ -32,6 +32,7 @@ a:hover{
   height: 65px;
   display: flex;
   position: fixed;
+  z-index: 1000;
   top: 0;
 }
 
@@ -61,16 +62,7 @@ a:hover{
   align-items: center;
 }
 
-.wrapper .top_navbar .top_menu .home_link a {
-  display: block;
-  background: var(--cor-primaria-4);
-  color: #fff;
-  padding: 8px 15px;
-  border-radius: 3px;
-  display: none;
-}
 
-.wrapper .top_navbar .top_menu .home_link a:hover,
 .wrapper .top_navbar .right_info .icon_wrap:hover {
   background-color: var(--cor-bg);
   transition: 0.3s;
@@ -86,7 +78,7 @@ a:hover{
   background: #fff;
   color: var(--cor-primaria-4);
   border: 2px solid var(--cor-primaria-4);
-  margin: 0 5px;
+  margin: 0 1px;
   cursor: pointer;
 }
 
@@ -247,11 +239,12 @@ a:hover {
 .dropdown-toggle::after {
   content: none;
 }
+/*Info principal */
 
 img{
-    max-width: 100%;
-  }
+  max-width: 100%;
+}
 /* Modal */
 .modal-header{
-    background: var(--cor-primaria-3);
-  }
+  background: var(--cor-primaria-3);
+}
